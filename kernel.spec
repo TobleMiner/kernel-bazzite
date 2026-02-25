@@ -173,18 +173,18 @@ Summary: The Linux kernel
 #  the --with-release option overrides this setting.)
 %define debugbuildsenabled 1
 # define buildid .local
-%define specrpmversion 6.17.7
-%define specversion 6.17.7
-%define patchversion 6.17
+%define specrpmversion 6.19.3
+%define specversion 6.19.3
+%define patchversion 6.19
 %define pkgrelease ba25
 %define kversion 6
-%define tarfile_release 6.17.7
+%define tarfile_release 6.19.3
 # This is needed to do merge window version magic
-%define patchlevel 17
+%define patchlevel 19
 # This allows pkg_release to have configurable %%{?dist} tag
-%define specrelease ba25%{?buildid}%{?dist}
+%define specrelease ba26%{?buildid}%{?dist}
 # This defines the kabi tarball version
-%define kabiversion 6.17.7
+%define kabiversion 6.19.3
 
 # If this variable is set to 1, a bpf selftests build failure will cause a
 # fatal kernel package build error
@@ -4515,10 +4515,10 @@ fi\
 #
 #
 %changelog
-* Sun Jan 18 2026 RJ Trujillo <eyecantcu@pm.me> [6.17.7-ba24]
+* Sun Jan 18 2026 RJ Trujillo <eyecantcu@pm.me> [6.19.3-ba24]
 - Bump NVIDIA driver release to 590.48.01
 
-* Thu Dec 11 2025 Antheas Kapenekakis <lkml@antheas.dev> [6.17.7-ba22]
+* Thu Dec 11 2025 Antheas Kapenekakis <lkml@antheas.dev> [6.19.3-ba22]
 - bump all modules (Antheas Kapenekakis)
 - drm/amd/display: Prevent Gating DTBCLK before It Is Properly Latched (Fangzhi Zuo)
 - msi-wmi-platform: fix quirk end missing (Antheas Kapenekakis)
@@ -4764,8 +4764,8 @@ fi\
 - scsi: sd: remove unused warning inherited from fedora (Antheas Kapenekakis)
 - [NA] add dev tools (Antheas Kapenekakis)
 
-* Sun Nov 02 2025 Justin M. Forbes <jforbes@fedoraproject.org> [6.17.7-0]
-- Linux v6.17.7
+* Sun Nov 02 2025 Justin M. Forbes <jforbes@fedoraproject.org> [6.19.3-0]
+- Linux v6.19.3
 
 * Wed Oct 29 2025 Augusto Caringi <acaringi@redhat.com> [6.17.6-0]
 - Linux v6.17.6
