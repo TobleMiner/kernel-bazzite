@@ -176,7 +176,7 @@ Summary: The Linux kernel
 %define specrpmversion 6.19.3
 %define specversion 6.19.3
 %define patchversion 6.19
-%define pkgrelease ba25
+%define pkgrelease ba27
 %define kversion 6
 %define tarfile_release 6.19.3
 # This is needed to do merge window version magic
@@ -1142,10 +1142,8 @@ Source4002: gating.yaml
 
 %if !%{nopatches}
 
-Patch1: patch-1-redhat.patch
-Patch2: patch-2-handheld.patch
-Patch3: patch-3-akmods.patch
-Patch4: patch-4-amdgpu-vrr-whitelist.patch
+Patch1: patch-1-bazzite.patch
+Patch2: patch-2-frl.patch
 %endif
 
 # empty final patch to facilitate testing of kernel patches
